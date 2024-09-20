@@ -204,7 +204,7 @@ button{
   font-family: var( --bs-font-sans-serif);
   color: white;
   font-size: 2rem;
-  padding: 0px;
+  padding: 10px;
 }
 .hero-banner__subtitle{
   font-family: var( --bs-font-sans-serif);
