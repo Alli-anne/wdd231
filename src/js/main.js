@@ -25,6 +25,8 @@ banner_img.alt = parkData.images[0].altText;
 
 document.querySelector('.hero-banner__image').innerHTML = parkData.images.url;
 
+document.querySelector('.hero-banner__image').innerHTML = parkData.images.altText;
+
 
 
 
