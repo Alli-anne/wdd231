@@ -233,7 +233,7 @@ button{
   list-style-type: none;
   padding: 20px;
   font-size: 1rem;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
   background-color: var(--bs-black);
 }
