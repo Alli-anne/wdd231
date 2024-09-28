@@ -1,0 +1,174 @@
+const cookies = {
+    "recipes":
+    [
+        {
+            "recipe_name": "Chocolate Chip Cookies",
+            "notes": "A classic cookie recipe",
+            "images": "https://cdn.freecodecamp.org/curriculum/project-imagery/chocolate-chip-cookies/chocolate-chip-cookies-1.jpg",
+            "type": "traditional",
+            "ingredients": [
+                {
+                    "name": "butter",
+                    "amounts": {
+                        "amount": "1",
+                        "unit": "lb"
+                    },
+                    "notes": "softened"
+                },
+                {
+                    "name": "brown sugar",
+                    "amounts": {
+                        "amount": "1 1/2",
+                        "unit": "cups"
+                    }
+                },
+                {
+                    "name": "white sugar",
+                    "amounts": {
+                        "amount": "1",
+                        "unit": "cup"
+                    }
+                },
+                {
+                    "name": "eggs",
+                    "amounts": {
+                        "amount": "3",
+                        "unit": "each"
+                    }
+                },
+                {
+                    "name": "vanilla",
+                    "amounts": {
+                        "amount": "2",
+                        "unit": "tsp"
+                    }
+                },
+                {
+                    "name": "baking soda",
+                    "amounts": {
+                        "amount": "1 1/2",
+                        "unit": "tsp"
+                    }
+                },
+                {
+                    "name": "salt",
+                    "amounts": {
+                        "amount": "1/2",
+                        "unit": "tsp"
+                    }
+                },
+                {
+                    "name": "flour",
+                    "amounts": {
+                        "amount": "5",
+                        "unit": "cups"
+                    },
+                    "notes": "we like 3 C white and 2 C whole wheat"
+                },
+                {
+                    "name": "semi-sweet chocolate chips",
+                    "amounts": {
+                        "amount": "2",
+                        "unit": "cups"
+                    }
+                },
+                {
+                    "name": "shredded coconut",
+                    "amounts": {
+                        "amount": "1-2",
+                        "unit": "cups"
+                    }
+                }
+            ],
+            "steps": [
+                "Cream the butter and sugar together, then beat in the eggs and vanilla",
+                "Mix in salt, soda and flour",
+                "Add chocolate chips and coconut",
+                "Bake 8-10 minutes at 350 F"
+            ]
+        },
+        {
+            "recipe_name": "ChocolateCookies",
+            "notes": "A classic cookie recipe",
+            "images": "https://cdn.freecodecamp.org/curriculum/project-imagery/chocolate-chip-cookies/chocolate-chip-cookies-1.jpg",
+            "type": "non-traditional",
+            "ingredients": [
+                {
+                    "name": "butter",
+                    "amounts": {
+                        "amount": "1",
+                        "unit": "lb"
+                    },
+                    "notes": "softened"
+                },
+                {
+                    "name": "brown sugar",
+                    "amounts": {
+                        "amount": "1 1/2",
+                        "unit": "cups"
+                    }
+                },
+                {
+                    "name": "white sugar",
+                    "amounts": {
+                        "amount": "1",
+                        "unit": "cup"
+                    }
+                },
+                {
+                    "name": "eggs",
+                    "amounts": {
+                        "amount": "3",
+                        "unit": "each"
+                    }
+                },
+                {
+                    "name": "vanilla",
+                    "amounts": {
+                        "amount": "2",
+                        "unit": "tsp"
+                    }
+                },
+                {
+                    "name": "baking soda",
+                    "amounts": {
+                        "amount": "1 1/2",
+                        "unit": "tsp"
+                    }
+                },
+                {
+                    "name": "salt",
+                    "amounts": {
+                        "amount": "1/2",
+                        "unit": "tsp"
+                    }
+                },
+                {
+                    "name": "flour",
+                    "amounts": {
+                        "amount": "5",
+                        "unit": "cups"
+                    },
+                    "notes": "we like 3 C white and 2 C whole wheat"
+                },
+                {
+                    "name": "coco",
+                    "amounts": {
+                        "amount": "",
+                        "unit": "cups"
+                    }
+                }
+            ],
+            "steps": [
+                "Cream the butter and sugar together, then beat in the eggs and vanilla",
+                "Mix in salt, soda and flour",
+                "Add chocolate chips and coconut",
+                "Bake 8-10 minutes at 350 F"
+            ]
+        }
+        ]
+
+}
+export function getRecipes() {
+  return cookies;
+}
