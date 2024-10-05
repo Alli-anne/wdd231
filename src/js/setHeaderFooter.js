@@ -31,7 +31,7 @@ function setFooter(data) {
     const footerEl = document.querySelector(".park-footer");
     footerEl.innerHTML = footerTemplate(data);
 }
-export default function setHeaderFooter(parkData) {
-    setHeaderInfo(parkData);
-    setFooter(parkData);
+export default function setHeaderFooter(data) {
+    setHeaderInfo(data);
+    setFooter(data);
 }
