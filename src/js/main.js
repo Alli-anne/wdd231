@@ -2,6 +2,7 @@ import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.js";
 import { mediaCardTemplate } from "./templates.mjs";
 
+
 function setParkIntro(data) {
   const introEl = document.querySelector(".intro");
   introEl.innerHTML = `<h1>${data.fullName}</h1>
