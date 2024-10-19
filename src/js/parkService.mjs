@@ -201,7 +201,7 @@ const parkInfoLinks = [
 ];
 
 const baseUrl = "https://developer.nps.gov/api/v1/";
-const apiKey = import.meta.env.VITE_NPS_API_KEY;
+const apiKey = "A8AtTg2KI95rU5Ln3FCOkcTHFlePlfOd8WmxjBFn";
 
 async function getJson(url) {
   const options = {
