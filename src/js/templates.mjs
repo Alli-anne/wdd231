@@ -52,8 +52,8 @@ export function alertTemplate(alert) {
   // Generate the HTML template using the alert data.
   return `<li class="alert">
     <svg class="icon" focusable="false" aria-hidden="true">
-      <use xlink:href="/images/sprite.symbol.svg#alert-${alertType}"></use>
-    </svg>
+       <use href="${spritePath}#alert-${type}"></use>
+      </svg>
     <div>
       <h3 class="alert-${alertType}">${alert.title}</h3>
       <p>${alert.description}</p>
