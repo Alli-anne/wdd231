@@ -247,11 +247,12 @@ button{
   margin-left: auto;
 }
 .global-header{
-  display: flex;
+  display: grid;
   justify-content: space-between;
   background-color: var(--bs-black);
 }
 .global-header__right {
+  grid-column: 3/4;
   display: flex;
   align-items: center;
 }
@@ -496,4 +497,9 @@ details {
   list-style: none;
 }
 
+.global-nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
 
