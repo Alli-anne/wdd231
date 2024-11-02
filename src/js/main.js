@@ -53,7 +53,7 @@ async function init() {
       console.log("toggle");
     });
   }
-
+ document.addEventListener("DOMContentLoaded", enableNavigation);
 init();
 
 

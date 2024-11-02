@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <script type="module" crossorigin src="/assets/main-5zaiA_y6.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/setHeaderFooter-yHxJkNAT.js">
-    <link rel="stylesheet" crossorigin href="/assets/setHeaderFooter-Cmi2JTv-.css">
+    <script type="module" crossorigin src="/assets/main-BOnWKE96.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/setHeaderFooter-EvRxiCKA.js">
+    <link rel="stylesheet" crossorigin href="/assets/setHeaderFooter-B2GSobn_.css">
   </head>
   <body>
     <p class="disclaimer">
@@ -52,21 +52,46 @@
           <svg class="icon">
               <use
               xmlns:xlink="http://www.w3.org/2000/xlink"
-              xlink:href="/assets/sprite.symbol-CkL__zNz.svg#search"></use>
+              xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#search"></use>
           </svg>
           <span class="visually-hidden">Search</span>
           </a>
-          <button id="global-nav-toggle" class="menu" >
-          <svg class="icon">
-              <use
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xlink:href="/assets/sprite.symbol-CkL__zNz.svg#menu"
-              ></use>
-          </svg>
-          <span class="visually-hidden">Open</span>
-         MENU
-        </button>
+          <button id="global-nav-toggle" class="menu">
+            <div class="global-nav__toggle--closed">
+              <svg class="icon">
+                <use xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#menu"></use>
+              </svg>
+              <span class="visually-hidden">Open</span> MENU
+            </div>
+            <div class="global-nav__toggle--open">
+              <svg class="icon">
+                <use xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#closed"></use>
+              </svg>
+              X CLOSE
+            </div>
+          </button>
       </div>
+      <nav class="global-nav">
+        <h2 class="global-nav__section-heading">Explore this Park</h2>
+        <ul class="global-nav__list">
+        <li>
+            <div class="global-nav__split-button">
+            <a id="plan" href="#">Plan Your Visit</a>
+            <button class="global-nav__split-button__toggle">
+                <span class="visually-hidden"
+                >Toggle submenu for Plan Your Visit</span
+                >
+                <svg  role="presentation" focusable="false">
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#arrow"
+                ></use>
+                </svg>
+            </button>
+            </div>
+        </li>
+        </ul>
+    </nav>
       </section>
       <section id="park-header">
       <div class="hero-banner">
@@ -87,7 +112,7 @@
               <svg class="icon" role="presentation" focusable="false">
                   <use
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="/assets/sprite.symbol-CkL__zNz.svg#info"
+                  xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#info"
                   ></use>
               </svg>
               </a>
@@ -98,7 +123,7 @@
               <svg class="icon" role="presentation" focusable="false">
                   <use
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="/assets/sprite.symbol-CkL__zNz.svg#alert"
+                  xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#alert"
                   ></use>
               </svg>
               </a>
@@ -109,7 +134,7 @@
               <svg class="icon" role="presentation" focusable="false">
                   <use
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="/assets/sprite.symbol-CkL__zNz.svg#location"
+                  xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#location"
                   ></use>
               </svg>
               </a>
@@ -120,7 +145,7 @@
               <svg class="icon" role="presentation" focusable="false">
                   <use
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="/assets/sprite.symbol-CkL__zNz.svg#calendar"
+                  xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#calendar"
                   ></use>
               </svg>
               </a>
@@ -131,7 +156,7 @@
               <svg class="icon" role="presentation" focusable="false">
                   <use
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="/assets/sprite.symbol-CkL__zNz.svg#fee-22"
+                  xlink:href="/assets/sprite.symbol-D5XSI_4v.svg#fee-22"
                   ></use>
               </svg>
               </a>
