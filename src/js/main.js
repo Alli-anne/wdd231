@@ -23,13 +23,46 @@ async function init() {
   setHeaderFooter(parkData);
   setParkIntro(parkData);
   setParkInfoLinks(links);
+  enableNavigation();}
+
+
+
+  function enableNavigation() {
+    const menuButton = document.querySelector("#global-nav-toggle");
+  
+    // Verify if menuButton is found
+    if (!menuButton) {
+      console.error("Menu button with ID 'global-nav-toggle' not found.");
+      return;
+    }
+  
+    // Add click event listener
+    menuButton.addEventListener("click", (ev) => {
+      let target = ev.target;
+  
+      // Toggle the 'show' class on the global-nav element
+      document.querySelector(".global-nav").classList.toggle("show");
+  
+      // Find the button element if the click target is inside it
+      if (target.tagName !== "BUTTON") {
+        target = target.closest("button");
+      }
+  
+      // Set aria-expanded attribute based on menu state
+      if (document.querySelector(".global-nav").classList.contains("show")) {
+        target.setAttribute("aria-expanded", true);
+      } else {
+        target.setAttribute("aria-expanded", false);
+      }
+  
+      console.log("toggle");
+  
+
+    });
+  }
   enableNavigation();
-}
-
-
 
 init();
-
 
 
 
