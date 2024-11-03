@@ -47,6 +47,9 @@ async function init() {
       console.log("toggle");
     });
   }
+  if (href.endsWith(".html") || href.startsWith("http")) {
+    window.location.href = href;
+  }
 
 init();
 
