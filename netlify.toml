@@ -1,0 +1,6 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = """
+      geolocation=(), microphone=(), camera=(), fullscreen=(), autoplay=(), encrypted-media=()
+    """
