@@ -548,6 +548,8 @@ details {
   font-weight: bold;
   color: var(--bs-body-bg);
   padding-top: 20px;
+  padding-bottom: 0px;
+  margin-left: 20px;
 }
 .global-nav__split-button{
   font-family: var(--bs-font-sans-serif);
@@ -564,5 +566,6 @@ details {
   margin: 0px;
   padding: 0px;
   font-weight: bold;
-  list-style: circle;
+  list-style-type: disc;
+  
 }

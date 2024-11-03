@@ -29,22 +29,21 @@ async function init() {
 
   function enableNavigation() {
     const menuButton = document.querySelector("#global-nav-toggle");
-    const subMenuToggles = document.querySelectorAll(
-      ".global-nav__split-button__toggle"
-    );
+    const globalNav = document.querySelector(".global-nav");
+    
     menuButton.addEventListener("click", (ev) => {
-      let target = ev.target;
-      document.querySelector(".global-nav").classList.toggle("show");
+      // Toggle the 'show' class on the global nav menu
+      globalNav.classList.toggle("show");
   
-      if (target.tagName != "BUTTON") {
-        target = target.closest("button");
-      }
-      if (document.querySelector(".global-nav").classList.contains("show")) {
-        target.setAttribute("aria-expanded", true);
-      } else {
-        target.setAttribute("aria-expanded", false);
-      }
-      console.log("toggle");
+      // Update aria-expanded attribute based on menu visibility
+      const isExpanded = globalNav.classList.contains("show");
+      menuButton.setAttribute("aria-expanded", isExpanded);
+  
+      // Toggle the visibility of "MENU" and "CLOSE" icons
+      const closedIcon = document.querySelector(".global-nav__toggle--closed");
+      const openIcon = document.querySelector(".global-nav__toggle--open");
+      closedIcon.style.display = isExpanded ? "none" : "flex";
+      openIcon.style.display = isExpanded ? "flex" : "none";
     });
   }
 
