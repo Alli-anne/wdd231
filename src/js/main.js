@@ -48,8 +48,8 @@ async function init() {
     });
   }
   if (href.endsWith(".html") || href.startsWith("http")) {
-    window.location.href = href;
-  }
+  window.location.href = href;
+}
 
 init();
 
