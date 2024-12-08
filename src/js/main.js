@@ -1,6 +1,6 @@
 import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.js";
-import { mediaCardTemplate } from "./templates.mjs";
+import { mediaCardTemplate, visitorCenterTemplate, activityListTemplate } from "./templates.mjs";
 
 
 function setParkIntro(data) {
@@ -23,7 +23,8 @@ async function init() {
   setHeaderFooter(parkData);
   setParkIntro(parkData);
   setParkInfoLinks(links);
-  enableNavigation();}
+  enableNavigation();
+  ;}
 
 
 

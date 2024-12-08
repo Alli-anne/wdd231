@@ -13,6 +13,7 @@ function setVisitorCenters(centers) {
   const html = centers.map(visitorCenterTemplate);
   centersContainer.insertAdjacentHTML("afterbegin", html.join(""));
 }
+
 function setActivities(activities) {
   const activitiesContainer = document.querySelector(".activities ul");
   const html = activityListTemplate(activities);
@@ -30,3 +31,4 @@ async function init() {
 }
 
 init();
+
