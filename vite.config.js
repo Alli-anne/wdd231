@@ -9,8 +9,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        conditions: resolve(__dirname, "src/conditions.html")
+        conditions: resolve(__dirname, "src/conditions.html"),
+        visitor_centers: resolve(__dirname, "src/visitor_centers.html") // No trailing comma
       }
     }
   }
 });
+
